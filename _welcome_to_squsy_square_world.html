@@ -155,7 +155,6 @@ ITM u 15,14
 ITM v 0,11
 EXT 0,5 1 15,6
 EXT 2,3 4 0,7
-EXT 15,5 8 13,13
 EXT 15,6 3 0,7
 PAL 0
 
@@ -234,8 +233,8 @@ u,u,i,i,0,i,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,i,0,0,i,i,0,0,0,0,0,0
 0,0,0,0,0,i,0,0,i,i,i,0,0,0,0,0
 0,0,0,0,0,i,0,0,i,i,i,i,0,0,0,0
-0,0,0,0,0,i,0,0,i,i,i,i,i,0,0,0
-0,0,0,0,0,i,0,0,i,i,i,i,i,i,0,0
+0,0,0,0,0,i,0,0,i,i,i,i,i,0,0,e
+0,0,0,0,0,i,0,0,i,i,i,i,i,i,0,d
 NAME clouds of keys
 ITM 10 5,3
 ITM 10 10,2
@@ -267,7 +266,7 @@ i,i,i,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,19,0,0,i,i,0,1g,1g,0
 0,0,0,0,0,0,0,0,19,i,i,i,0,0,0,1g
 0,0,0,0,1i,0,0,0,i,i,i,i,0,0,1g,0
-0,0,0,0,i,0,0,i,i,i,i,i,0,1g,0,0
+0,0,0,0,i,1j,0,i,i,i,i,i,0,1g,0,0
 0,0,i,i,i,1g,1g,1g,1g,1g,1g,1g,1g,0,0,0
 0,0,0,0,0,i,i,i,i,i,i,i,i,0,0,1e
 0,0,0,0,0,0,i,i,0,0,i,i,0,19,0,1f
@@ -276,6 +275,7 @@ i,i,i,i,i,i,0,i,i,i,i,i,0,i,i,i
 i,i,i,i,i,i,i,0,i,i,i,i,i,i,i,i
 i,i,i,0,i,i,i,i,i,i,0,i,i,i,i,i
 i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i
+NAME dragon ragon
 ITM 12 7,13
 ITM 12 3,14
 ITM 12 10,14
@@ -283,7 +283,7 @@ ITM 12 6,12
 ITM 12 12,12
 ITM 13 5,10
 EXT 15,9 6 0,6
-EXT 4,5 8 13,13
+EXT 5,7 8 13,13
 PAL 0
 
 ROOM 8
@@ -303,8 +303,8 @@ ROOM 8
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-EXT 13,13 2 15,5
-EXT 13,13 7 4,5
+NAME eagle regal
+EXT 13,13 7 5,7
 PAL 0
 
 TIL 10
@@ -783,6 +783,16 @@ TIL 1i
 00101000
 01010000
 
+TIL 1j
+00000001
+00000001
+00000001
+00000001
+00000111
+00111101
+00000001
+11111111
+
 SPR 10
 00000000
 00000000
@@ -978,7 +988,7 @@ SPR 26
 00111100
 00100100
 NAME turtle2
-DLG h
+DLG j
 POS 6 2,7
 
 SPR 27
@@ -1090,28 +1100,6 @@ SPR f
 00000000
 00000000
 00000000
-
-SPR g
-11111111
-11111111
-10000001
-11111111
-11111011
-11110011
-11111111
-11111111
-POS 6 15,14
-
-SPR h
-11111111
-11111111
-11111111
-11111111
-00000000
-11111111
-10111101
-10010100
-POS 6 15,15
 
 SPR i
 00000000
@@ -1529,7 +1517,6 @@ SPR 1t
 00000000
 NAME turtle1
 DLG e
-POS 3 13,8
 
 SPR 1u
 00011000
@@ -1712,7 +1699,6 @@ SPR 2j
 00000000
 00000000
 00000000
-POS 7 5,7
 
 ITM 0
 00000000
@@ -2191,17 +2177,13 @@ DLG f
 
 NAME item x dialog
 
-DLG g
-hi there! my name is leasa i mean, leasa bengemen sory i'm shy. anyway, i was wating for my frend wen i got a text saing "sory she's sik" but i left a scavinger-hunt arawond the fary because i didin't no this yet! cold you do the scaviger-hunt?
-NAME sprite 21 dialog
-
-DLG h
-in the sky it grose blwe it flise in the ciaowd there are two
-NAME sprite 26 dialog
-
 DLG i
 you fownd me that was grate now lets find were egals mate
 NAME sprite 2d dialog
+
+DLG j
+it flise it crise it brethes fier it knows who is and who's not a lier
+NAME turtle2 dialog
 
 VAR a
 42
